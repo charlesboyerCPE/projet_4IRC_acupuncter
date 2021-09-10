@@ -9,7 +9,9 @@
 <body>
 <?php
     require('../includes/db.php');
+    echo '<div class="container">';
 ?>
 <?= $content ?>
+<?php echo '</div>';?>
 </body>
 </html>

@@ -2,22 +2,28 @@
 $title = 'Login';
 
 $content ='
-<form method="POST" action="./index.php?action=login>
-  <fieldset>
-    <legend>Merci de vous connecter.</legend>
+<div class="row">
+<div class="col-md-2"></div> <div class="col-md-8">
+    <form method="POST" action="./index.php?action=login">
+    <fieldset>
+        <legend>Merci de vous connecter.</legend>
 
-    <div class="form-group">
-      <label for="exampleInputEmail1" class="form-label mt-4">Adresse Mail</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Rentrer votre adresse mail" name="email">
-      
-    </div>
+        <div>
+        <label for="Login - Mail" class="form-label-login">Adresse Mail</label>
+        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Rentrer votre adresse mail" name="email">
+        </div>
 
-    <div class="form-group">
-      <label for="exampleInputPassword1" class="form-label mt-4">Mot de Passe</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de Passe" name="password">
-    </div>
-    <br>
-    <button type="submit" class="btn btn-primary">Envoyer</button>
-</form>
+        <div>
+        <label for="Password" class="form-label-login">Mot de Passe</label>
+        <input type="password" class="form-control" placeholder="Mot de Passe" name="password">
+        </div>
+
+        <br>
+
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+        </fieldset>
+    </form>
+</div>
+</div>
 ';
 require_once('./layouts/structure.php');
