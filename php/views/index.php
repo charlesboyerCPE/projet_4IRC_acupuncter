@@ -1,4 +1,7 @@
 <?php
-$title = "Page d'accueil";
-$content = 'test yoooo';
-include('./layouts/structure.php');
+    require('../controller/controller.php');
+    
+    $test=1;
+    if($test==1){
+        index();
+    }
