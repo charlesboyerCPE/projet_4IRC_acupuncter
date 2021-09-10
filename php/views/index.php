@@ -1,4 +1,4 @@
 <?php
-$titre = "Page d'accueil";
+$title = "Page d'accueil";
+$content = 'test yoooo';
 include('./layouts/structure.php');
-include('../includes/db.php');

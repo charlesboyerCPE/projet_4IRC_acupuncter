@@ -7,5 +7,9 @@
   <link rel="stylesheet" href="../../css/bootstrap.css">
 </head>
 <body>
+<?php
+    require('../includes/db.php');
+?>
+<?= $content ?>
 </body>
 </html>
