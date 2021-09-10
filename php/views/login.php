@@ -3,8 +3,13 @@ $title = 'Login';
 
 $content ='
 <div class="row">
+
 <div class="col-md-2"></div> <div class="col-md-8">
-    <form method="POST" action="./index.php?action=login">
+
+
+
+
+    <form method="POST" action="./index.php?action=login" class="login container">
     <fieldset>
         <legend>Merci de vous connecter.</legend>
 
