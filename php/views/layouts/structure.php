@@ -9,6 +9,7 @@
 <body>
 <?php
     require('../includes/db.php');
+    require('nav.php');
     echo '<div class="container">';
 ?>
 <?= $content ?>

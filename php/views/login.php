@@ -2,33 +2,49 @@
 $title = 'Login';
 
 $content ='
-<div class="row">
+<class="container">
+    <div class="row align-items-start">
+        <div class="col">
+            <br><br>
+            <h1 class="text-center">Connexion</h1>
+            <br>
+          
+        </div>
+    </div>
 
-<div class="col-md-2"></div> <div class="col-md-8">
 
-
-
-
-    <form method="POST" action="./index.php?action=login" class="login container">
+    <form method="POST" action="./index.php?action=login">
     <fieldset>
-        <legend>Merci de vous connecter.</legend>
 
-        <div>
-        <label for="Login - Mail" class="form-label-login">Adresse Mail</label>
-        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Rentrer votre adresse mail" name="email">
+
+        
+    <div class="row align-items-center">
+        <form>
+        <div class="col">
+            <div class="form-group">
+                    <div class="mb-3">
+                        <label class="noir" for="Email">Adresse mail</label>
+                        <input type="email" class="form-control" id=Email" aria-describedby="emailHelp" placeholder="Adresse mail">
+                        <div class="invalid-feedback">Un email valide est requis.</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="mb-3">
+                        <label class="noir" for="Password">Entrez votre mot de passe</label>
+                        <input type="password" class="form-control" id="Password" placeholder="●●●●●●●●">
+                        <div class="invalid-feedback">Un mot de passe est requis.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
         </div>
-
-        <div>
-        <label for="Password" class="form-label-login">Mot de Passe</label>
-        <input type="password" class="form-control" placeholder="Mot de Passe" name="password">
-        </div>
-
-        <br>
-
-        <button type="submit" class="btn btn-primary">Envoyer</button>
-        </fieldset>
-    </form>
+        </form>
+    </div>
+    </fieldset>
 </div>
-</div>
+
+
 ';
 require_once('./layouts/structure.php');
