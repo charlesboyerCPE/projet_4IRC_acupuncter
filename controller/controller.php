@@ -1,5 +1,17 @@
 <?php
-  error_reporting(E_ALL);
+require_once ('./libs/Smarty.class.php');
+
+function accueil(){
+  $smarty = new Smarty;
+  $smarty->display('./views/index.html');
+}
+
+function login(){
+  $smarty = new Smarty;
+  $smarty->display('./views/login.html');
+}
+
+/*   error_reporting(E_ALL);
   ini_set("display_errors", 1);
 
   // function index() {
@@ -21,5 +33,4 @@
   // include('../views/home.php');
   // }
 
-?>
-
+?> */

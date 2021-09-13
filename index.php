@@ -1,17 +1,16 @@
 <?php
 session_start();
 
-require_once ('./libs/Smarty.class.php');
-//require('../controller/controller.php');
+require_once('./controller/controller.php');
 
-$smarty = new Smarty;
+$action = $_GET['action'];
 
-if(!$_GET['action']){
-    $smarty->display('./views/index.html');
+if(!$action || $action=="accueil"){
+    accueil();
 }
-if($_GET['action']=="login"){
-    $smarty->display('./views/login.html');
+if($action=="login"){
+    login();
 }
-if($_GET['action']=="register"){
+if($action=="register"){
     $smarty->display('./views/register.html');
 }
