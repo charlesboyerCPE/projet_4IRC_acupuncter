@@ -1,15 +1,32 @@
 <?php
-    // Connexion à la base de données
-    try {
-        $db = new PDO('mysql:host=localhost;dbname=acu', 'root', '');
+    error_reporting(E_ALL);
+    ini_set("display_errors", 1);
 
-    } catch (PDOException $e) {
-        echo $e->getCode() . ' ' . $e->getMessage();
+    class Acupuncter
+    {
+        public function login($email_user,$password_user){
+            try{
+                $db = new PDO('mysql:host=localhost;dbname=acu', 'root', '',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+            }
+            catch(PDOException $e) {
+                $e->getMessage();
+            }
+
+            $req = "SELECT id_user, fname_user, lname_user, password_user FROM users WHERE email_user = '".$email_user."'";
+            $resp = $db->query($req);
+            while ($data = $resp->fetch()){
+                if (password_verify($password_user, $data['password_user'])) {
+                    $_SESSION['id_user']=$data['id_user'];
+                    $_SESSION['fname_user']=$data['fname_user'];
+                    $_SESSION['lname_user']=$data['lname_user'];
+                }
+            }
+        }
     }
 ?>
 
 <?php
-
+/*
     // Classe gérant le dialogue avec la base de données
     class Acupuncter
     {
@@ -35,7 +52,7 @@
                 echo $e->getCode() . ' ' . $e->getMessage();
             }
         }
-
+    
         // Méthode permettant de fermer la connexion à la base de données
         public function close()
         {}
@@ -61,4 +78,4 @@
             return $this->_patho;
         }
     }
-?>
+?>*/

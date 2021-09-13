@@ -3,7 +3,7 @@ session_start();
 
 require_once('./controller/controller.php');
 
-$action = $_GET['action'];
+$action = isset($_GET['action']) ? $_GET['action'] : NULL;
 
 if($action=="getlogin"){
     getlogin();
@@ -11,15 +11,9 @@ if($action=="getlogin"){
 elseif($action=="postlogin"){
     postlogin();
 }
-/* elseif($action=="getregister"){
-    getregister();
-}
-elseif($action=="postregister"){
-    postregister();
-}
 elseif($action=="logout"){
     logout();
-} */
+}
 else{
-    accueil();
+    home();
 }

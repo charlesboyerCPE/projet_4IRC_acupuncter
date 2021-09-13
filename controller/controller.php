@@ -1,7 +1,11 @@
 <?php
-require_once ('./libs/Smarty.class.php');
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
 
-function accueil(){
+require_once ('./libs/Smarty.class.php');
+require_once ('models/acupuncter.php');
+
+function home(){
   $smarty = new Smarty;
   $smarty->display('./views/index.html');
 }
@@ -12,21 +16,24 @@ function getlogin(){
 }
 
 function postlogin(){
+  $email_user=$_POST['email_user'];
+	$password_user=$_POST['password_user'];
+
+  $connect = new Acupuncter;
+  $connect->login($email_user,$password_user);
 
   $smarty = new Smarty;
-  $smarty->display('index.php');
+  $smarty->display('./views/index.html');
 }
 
-/* function getlogin(){
-  $smarty = new Smarty;
-  $smarty->display('./views/login.html');
-}
+function logout(){
+  $_SESSION = array();
+  session_destroy();
+  unset($_SESSION);
 
-function postlogin(){
-  
   $smarty = new Smarty;
-  $smarty->display('index.php');
-} */
+  $smarty->display('./views/index.html');
+}
 
 /*   error_reporting(E_ALL);
   ini_set("display_errors", 1);
