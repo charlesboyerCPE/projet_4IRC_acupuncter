@@ -6,10 +6,27 @@ function accueil(){
   $smarty->display('./views/index.html');
 }
 
-function login(){
+function getlogin(){
   $smarty = new Smarty;
   $smarty->display('./views/login.html');
 }
+
+function postlogin(){
+
+  $smarty = new Smarty;
+  $smarty->display('index.php');
+}
+
+/* function getlogin(){
+  $smarty = new Smarty;
+  $smarty->display('./views/login.html');
+}
+
+function postlogin(){
+  
+  $smarty = new Smarty;
+  $smarty->display('index.php');
+} */
 
 /*   error_reporting(E_ALL);
   ini_set("display_errors", 1);
