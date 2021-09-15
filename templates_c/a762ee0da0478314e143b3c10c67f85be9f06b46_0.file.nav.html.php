@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-13 15:23:42
+/* Smarty version 3.1.39, created on 2021-09-13 14:54:18
   from 'C:\wamp64\www\projet_4IRC_acupuncter\templates\nav.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613f6cfe558fd4_37520636',
+  'unifunc' => 'content_613f661a799bb9_95426254',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a762ee0da0478314e143b3c10c67f85be9f06b46' => 
     array (
       0 => 'C:\\wamp64\\www\\projet_4IRC_acupuncter\\templates\\nav.html',
-      1 => 1631546609,
+      1 => 1631544855,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_613f6cfe558fd4_37520636 (Smarty_Internal_Template $_smarty_tpl) {
+function content_613f661a799bb9_95426254 (Smarty_Internal_Template $_smarty_tpl) {
 ?><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
     <a class="navbar-brand" href="index.php?action=accueil">Acuponcture</a>
@@ -30,41 +30,25 @@ function content_613f6cfe558fd4_37520636 (Smarty_Internal_Template $_smarty_tpl)
     <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav me-auto">
             <li class="nav-item">
-                <a class="nav-link active" href="index.php?action=accueil">Accueil
+                <a class="nav-link active" href="index.php">Accueil
                 <span class="visually-hidden">(current)</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.php?action=information">Information</a>
+                <a class="nav-link" href="#">Features</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.php?action=bienfaits">Les bienfaits</a>
+                <a class="nav-link" href="#">Pricing</a>
             </li>
-             <li class="nav-item">
-                <a class="nav-link" href="index.php?action=location">Nous trouver</a>
-            </li>
-
         </ul>
-        <div class="d-flex">
+        <form class="d-flex">
         <!-- Si Connecté -->
-
-        <?php if (1 == 0) {?>
-            <a href="index.php?action=login">            
-                <button name="Mon compte" class="btn btn-dark my-2 my-sm-2 mx-sm-1" type="button"><?php echo $_smarty_tpl->tpl_vars['nom']->value;?>
-</button>
-            </a>
-            <a href="index.php?action=login">
-                <button name="Déconnexion" class="btn btn-dark my-2 my-sm-2 mx-sm-1" type="button">Se déconnecter</button>
-            </a>
-        <?php } else { ?> 
-            <a href="index.php?action=login">
-                <button name="Connexion" class="btn btn-dark my-2 my-sm-2 mx-sm-1" type="button">Se connecter</button>
-            </a>
-            <a href="index.php?action=register">
-             <button name="Inscription"class="btn btn-dark my-2 my-sm-2 mx-sm-1" type="button">S'incrire</button>
-            </a>
-        <?php }?>
-        </div>
+            <button name="Mon compte" class="btn btn-dark my-2 my-sm-2 mx-sm-1" type="button"><!-- Nom / prénom user --></button>
+            <button name="Déconnexion" class="btn btn-dark my-2 my-sm-2 mx-sm-1" type="button">Se déconnecter</button>
+             
+            <a href="index.php?action=getlogin"><button name="Connexion" class="btn btn-dark my-2 my-sm-2 mx-sm-1" type="button">Se connecter</button></a>
+            <a href="index.php?action=getregister"><button name="Inscription"class="btn btn-dark my-2 my-sm-2 mx-sm-1" type="button">S'inscrire</button></a>
+        </form>
     </div>
     </div>
  </nav><?php }

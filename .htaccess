@@ -1,0 +1,1 @@
+RedirectPermanent /index.php?action=getlogin /login.html

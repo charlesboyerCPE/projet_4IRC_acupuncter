@@ -11,7 +11,7 @@ if($action=="getlogin"){
 elseif($action=="postlogin"){
     postlogin();
 }
-elseif($action=="getregister"){
+/* elseif($action=="getregister"){
     getregister();
 }
 elseif($action=="postregister"){
@@ -19,7 +19,7 @@ elseif($action=="postregister"){
 }
 elseif($action=="logout"){
     logout();
-}
+} */
 else{
     accueil();
 }
