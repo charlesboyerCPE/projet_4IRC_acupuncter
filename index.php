@@ -5,12 +5,21 @@ require_once('./controller/controller.php');
 
 $action = $_GET['action'];
 
-if(!$action || $action=="accueil"){
+if($action=="getlogin"){
+    getlogin();
+}
+elseif($action=="postlogin"){
+    postlogin();
+}
+elseif($action=="getregister"){
+    getregister();
+}
+elseif($action=="postregister"){
+    postregister();
+}
+elseif($action=="logout"){
+    logout();
+}
+else{
     accueil();
-}
-if($action=="login"){
-    login();
-}
-if($action=="register"){
-    $smarty->display('./views/register.html');
 }

@@ -1,5 +1,6 @@
 {include file="../templates/structure.html" title="Connectez-vous"}
 {block name=body}
+
     <div class="row align-items-start">
         <div class="col">
             <br><br>
@@ -7,28 +8,28 @@
             <br>
         </div>
     </div>
-    <form method="POST" action="./index.php?action=login">
+    <form method="POST" action="./index.php?action=postlogin">
         <fieldset> 
         <div class="row align-items-center">
             <form>
                 <div class="col">
                     <div class="form-group">
                             <div class="mb-3">
-                                <label class="noir" for="Email">Adresse mail</label>
-                                <input type="email" class="form-control" id=Email" aria-describedby="emailHelp" placeholder="Adresse mail">
+                                <label name="Adresse mail" class="noir" for="Email">Adresse mail</label>
+                                <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Adresse mail">
                                 <div class="invalid-feedback">Un email valide est requis.</div>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="mb-3">
-                                <label class="noir" for="Password">Entrez votre mot de passe</label>
+                                <label name="Mot de passe" class="noir" for="Password">Entrez votre mot de passe</label>
                                 <input type="password" class="form-control" id="Password" placeholder="●●●●●●●●">
                                 <div class="invalid-feedback">Un mot de passe est requis.</div>
                             </div>
                         </div>
                 </div>
                 <div class="mb-3">
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                    <button type="submit" class="btn btn-primary">Se connecter</button>
                 </div>
             </div>
         </fieldset>
