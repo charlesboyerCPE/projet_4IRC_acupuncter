@@ -7,25 +7,40 @@
     <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav me-auto">
             <li class="nav-item">
-                <a class="nav-link active" href="index.php">Accueil
+                <a class="nav-link active" href="index.php?action=accueil">Accueil
                 <span class="visually-hidden">(current)</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="index.php?action=information">Information</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="index.php?action=bienfaits">Les bienfaits</a>
             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="index.php?action=location">Nous trouver</a>
+            </li>
+
         </ul>
-        <form class="d-flex">
+        <div class="d-flex">
         <!-- Si Connecté -->
-            <button name="Mon compte" class="btn btn-dark my-2 my-sm-2 mx-sm-1" type="button"><!-- Nom / prénom user --></button>
-            <button name="Déconnexion" class="btn btn-dark my-2 my-sm-2 mx-sm-1" type="button">Se déconnecter</button>
-             
-            <a href="index.php?action=getlogin"><button name="Connexion" class="btn btn-dark my-2 my-sm-2 mx-sm-1" type="button">Se connecter</button></a>
-            <a href="index.php?action=getregister"><button name="Inscription"class="btn btn-dark my-2 my-sm-2 mx-sm-1" type="button">S'inscrire</button></a>
-        </form>
+
+        {if 1 eq 0 }
+            <a href="index.php?action=login">            
+                <button name="Mon compte" class="btn btn-dark my-2 my-sm-2 mx-sm-1" type="button">{$nom}</button>
+            </a>
+            <a href="index.php?action=login">
+                <button name="Déconnexion" class="btn btn-dark my-2 my-sm-2 mx-sm-1" type="button">Se déconnecter</button>
+            </a>
+        {else} 
+            <a href="index.php?action=login">
+                <button name="Connexion" class="btn btn-dark my-2 my-sm-2 mx-sm-1" type="button">Se connecter</button>
+            </a>
+            <a href="index.php?action=register">
+             <button name="Inscription"class="btn btn-dark my-2 my-sm-2 mx-sm-1" type="button">S'incrire</button>
+            </a>
+        {/if}
+        </div>
     </div>
     </div>
  </nav>

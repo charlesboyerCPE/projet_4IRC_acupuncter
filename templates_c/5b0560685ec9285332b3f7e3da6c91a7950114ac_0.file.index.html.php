@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-13 15:18:45
+/* Smarty version 3.1.39, created on 2021-09-15 03:07:13
   from 'C:\wamp64\www\projet_4IRC_acupuncter\views\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613f6bd51cce21_39387659',
+  'unifunc' => 'content_61416361abf370_62477742',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5b0560685ec9285332b3f7e3da6c91a7950114ac' => 
     array (
       0 => 'C:\\wamp64\\www\\projet_4IRC_acupuncter\\views\\index.html',
-      1 => 1631546318,
+      1 => 1631675201,
       2 => 'file',
     ),
   ),
@@ -21,25 +21,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:../templates/structure.html' => 1,
   ),
 ),false)) {
-function content_613f6bd51cce21_39387659 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_loadInheritance();
-$_smarty_tpl->inheritance->init($_smarty_tpl, false);
+function content_61416361abf370_62477742 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:../templates/structure.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>"Accueil"), 0, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_944564795613f6bd51cb2f1_69781200', 'body');
-}
-/* {block 'body'} */
-class Block_944564795613f6bd51cb2f1_69781200 extends Smarty_Internal_Block
-{
-public $subBlocks = array (
-  'body' => 
-  array (
-    0 => 'Block_944564795613f6bd51cb2f1_69781200',
-  ),
-);
-public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-<div class="container">
       <section id="Acueil">
       <div class="row align-items-start">
           <div class="col">
@@ -74,9 +59,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
       </div>
       </section>
 
-</div>
-<?php
-}
-}
-/* {/block 'body'} */
+  </div>
+</body>
+</html><?php }
 }
