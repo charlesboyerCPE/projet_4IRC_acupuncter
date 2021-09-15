@@ -16,9 +16,14 @@ function postlogin(){
   $smarty->display('index.php');
 }
 
-function register(){
+function getregister(){
   $smarty = new Smarty;
   $smarty->display('./views/register.html');
+}
+
+function postregister(){
+  $smarty = new Smarty;
+  $smarty->display('./views/login.html');
 }
 
 function information(){

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-13 15:15:10
+/* Smarty version 3.1.39, created on 2021-09-15 03:11:30
   from 'C:\wamp64\www\projet_4IRC_acupuncter\views\register.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613f6afea25a63_40805895',
+  'unifunc' => 'content_6141646278b989_89708095',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cd245040d103c342b33229c8adc074406cec57aa' => 
     array (
       0 => 'C:\\wamp64\\www\\projet_4IRC_acupuncter\\views\\register.html',
-      1 => 1631546108,
+      1 => 1631675356,
       2 => 'file',
     ),
   ),
@@ -21,25 +21,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:../templates/structure.html' => 1,
   ),
 ),false)) {
-function content_613f6afea25a63_40805895 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_loadInheritance();
-$_smarty_tpl->inheritance->init($_smarty_tpl, false);
+function content_6141646278b989_89708095 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:../templates/structure.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>"Inscrivez-vous"), 0, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1038284274613f6afea241f9_08593923', 'body');
-}
-/* {block 'body'} */
-class Block_1038284274613f6afea241f9_08593923 extends Smarty_Internal_Block
-{
-public $subBlocks = array (
-  'body' => 
-  array (
-    0 => 'Block_1038284274613f6afea241f9_08593923',
-  ),
-);
-public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-<div class="container">
     <div class="row align-items-start">
         <div class="col">
             <br><br>
@@ -49,7 +34,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
     </div>
     <div class="row align-items-center" >
         <div class="col">
-    <form>
+    <form method="POST" action="./index.php?action=postregister">
         <div class="form-group">    
             <div class="mb-3">
                 <label name="Nom" class="noir" for="firstName">Nom</label>
@@ -109,9 +94,8 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
         </div>
     </div>
     </form>
-</div>
-<?php
-}
-}
-/* {/block 'body'} */
+
+  </div>
+</body>
+</html><?php }
 }

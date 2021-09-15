@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-15 02:58:22
+/* Smarty version 3.1.39, created on 2021-09-15 03:11:28
   from 'C:\wamp64\www\projet_4IRC_acupuncter\templates\nav.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6141614e5ccc77_89847389',
+  'unifunc' => 'content_614164604abbe9_79793079',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a762ee0da0478314e143b3c10c67f85be9f06b46' => 
     array (
       0 => 'C:\\wamp64\\www\\projet_4IRC_acupuncter\\templates\\nav.html',
-      1 => 1631674697,
+      1 => 1631675485,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6141614e5ccc77_89847389 (Smarty_Internal_Template $_smarty_tpl) {
+function content_614164604abbe9_79793079 (Smarty_Internal_Template $_smarty_tpl) {
 ?><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
     <a class="navbar-brand" href="index.php?action=accueil">Acuponcture</a>
@@ -57,10 +57,10 @@ function content_6141614e5ccc77_89847389 (Smarty_Internal_Template $_smarty_tpl)
                 <button name="Déconnexion" class="btn btn-dark my-2 my-sm-2 mx-sm-1" type="button">Se déconnecter</button>
             </a>
         <?php } else { ?> 
-            <a href="index.php?action=login">
+            <a href="index.php?action=getlogin">
                 <button name="Connexion" class="btn btn-dark my-2 my-sm-2 mx-sm-1" type="button">Se connecter</button>
             </a>
-            <a href="index.php?action=register">
+            <a href="index.php?action=getregister">
              <button name="Inscription"class="btn btn-dark my-2 my-sm-2 mx-sm-1" type="button">S'incrire</button>
             </a>
         <?php }?>
