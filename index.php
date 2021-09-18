@@ -13,7 +13,7 @@ elseif($action=="postlogin"){
 }
 elseif($action=="logout"){
     logout();
-}
+} 
 else{
     home();
 }
