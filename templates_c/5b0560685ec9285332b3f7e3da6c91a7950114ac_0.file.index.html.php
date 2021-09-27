@@ -1,4 +1,29 @@
-{include file="../templates/structure.html" title="Accueil"}
+<?php
+/* Smarty version 3.1.39, created on 2021-09-27 14:48:01
+  from 'C:\wamp64\www\projet_4IRC_acupuncter\views\index.html' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_6151d9a1ada791_34807320',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '5b0560685ec9285332b3f7e3da6c91a7950114ac' => 
+    array (
+      0 => 'C:\\wamp64\\www\\projet_4IRC_acupuncter\\views\\index.html',
+      1 => 1632754076,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:../templates/structure.html' => 1,
+  ),
+),false)) {
+function content_6151d9a1ada791_34807320 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_subTemplateRender("file:../templates/structure.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>"Accueil"), 0, false);
+?>
 
 <section>
     <div class="row align-items-start">
@@ -95,4 +120,5 @@
 
 </body>
 
-</html>
+</html><?php }
+}
