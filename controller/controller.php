@@ -15,6 +15,15 @@ function getlogin(){
   $smarty->display('./views/login.html');
 }
 
+function getlistepatho(){
+  $smarty = new Smarty;
+  $smarty->assign(array(
+    "une_variable" => "Je suis une variable",
+    "une_autre_variable" => "Je suis une belle variable"
+    ));
+  $smarty->display('./views/liste-patho.html');
+}
+
 function postlogin(){
   $email_user=$_POST['email_user'];
 	$password_user=$_POST['password_user'];

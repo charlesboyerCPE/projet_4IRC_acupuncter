@@ -14,6 +14,9 @@ elseif($action=="postlogin"){
 elseif($action=="logout"){
     logout();
 } 
+elseif($action=="listepatho"){
+    getlistepatho();
+} 
 else{
     home();
 }
