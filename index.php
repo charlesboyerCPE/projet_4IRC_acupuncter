@@ -11,6 +11,12 @@ if($action=="getlogin"){
 elseif($action=="postlogin"){
     postlogin();
 }
+elseif($action=="getregister"){
+    getregister();
+}
+elseif($action=="postregister"){
+    postregister();
+}
 elseif($action=="logout"){
     logout();
 } 

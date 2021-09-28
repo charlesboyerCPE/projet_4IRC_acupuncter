@@ -13,50 +13,50 @@
         <div class="form-group">    
             <div class="mb-3">
                 <label name="Nom" class="noir" for="firstName">Nom</label>
-                <input id="firstName" class="form-control" required="" type="text" value="" placeholder="Nom" />
+                <input id="firstName" class="form-control" required="" type="text" value="" placeholder="Nom" name="fname_user"/>
                 <div class="invalid-feedback">Un nom valide est requis.</div>
             </div>
         </div>
         <div class="form-group">
             <div class="mb-3">
                 <label name="Prénom" class="noir" for="lastName">Prénom</label>
-                <input id="lastName" class="form-control" required="" type="text" value="" placeholder="Prénom" />
+                <input id="lastName" class="form-control" required="" type="text" value="" placeholder="Prénom" name="lname_user" />
                 <div class="invalid-feedback">Un nom valide est requis.</div>
             </div>
         </div>   
         <div class="form-group">
             <div class="mb-3">
                 <label name="Adresse mail" class="noir" for="Email">Adresse mail</label>
-                <input type="email" class="form-control" id=Email" aria-describedby="emailHelp" placeholder="Adresse mail">
+                <input type="email" class="form-control" id="Email" required="" aria-describedby="emailHelp" placeholder="Adresse mail" name="email_user">
                 <div class="invalid-feedback">Un email valide est requis.</div>
             </div>
         </div>
         <div class="form-group">
             <div class="mb-3">
                 <label name="Mot de passe" class="noir" for="Password">Entrez votre mot de passe</label>
-                <input type="password" class="form-control" id="Password" placeholder="●●●●●●●●">
+                <input type="password" class="form-control" id="Password" required="" placeholder="●●●●●●●●" name="password_user">
                 <div class="invalid-feedback">Un mot de passe est requis.</div>
             </div>
         </div>
         <div class="form-group">
             <div class="mb-3">
                 <label name="Confirmation du mot de passe" class="noir" for="ConfimePassword">Confirmation du mot de passe</label>
-                <input type="password" class="form-control" id="ConfimePassword" placeholder="●●●●●●●●">
+                <input type="password" class="form-control" id="ConfimePassword" required="" placeholder="●●●●●●●●" name="password_user2">
                 <div class="invalid-feedback">La confirmation du mot de passe est requise.</div>
             </div>
         </div>
-        <div class="form-check">
+        <div class="form-group">
             <div class="mb-3">
-                <input name="Accepter de recevoir les offres commerciales par mail" class="form-check-input noir" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label noir" for="flexCheckDefault">
+                <input class="form-check-input noir" type="checkbox" value="" id="flexCheckDefault" name="Accepter offres commerciales">
+                <label name="Accepter de recevoir les offres commerciales par mail" class="form-check-label noir" for="flexCheckDefault">
                    J'accepte de recevoir des informations et des offres commerciales de la part de Acupuncture CPE LYON ! par e-mail.
                 </label>
             </div>
         </div>
 
-        <div class="form-check">
+        <div class="form-group">
             <div class="mb-3">
-                <input class="form-check-input noir" type="checkbox" value="" id="flexCheckChecked">
+                <input class="form-check-input noir" type="checkbox" value="" required="" id="flexCheckChecked" name="policies">
                 <label name="Accepter les politique de données personnelles" class="form-check-label noir" for="flexCheckChecked">
                   En créant mon compte, je certifie avoir pris connaissance de notre <a href="https://policies.google.com/privacy?hl=fr-CA" target="_blank" class="noir"> Politique de données personnelles*</a>
                 </label>
@@ -65,7 +65,7 @@
         
         </div>
         <div class="mb-3">
-            <button name="Valider l'inscription" type="submit" class="btn btn-primary">Validez l'inscription</button>
+            <button name="Valider l'inscription" type="submit" class="btn btn-dark">Validez l'inscription</button>
         </div>
     </div>
     </form>
