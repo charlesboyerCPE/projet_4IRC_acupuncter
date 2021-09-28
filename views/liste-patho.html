@@ -1,17 +1,56 @@
 {include file="../templates/structure.html" title="Consultation des pathologies"}
+<form method="POST" action="./index.php?action=listepatho">
+    <fieldset>
+        <div class="form-group">
+            <label for="exampleSelect1" class="form-label mt-4">Méridien</label>
+            <select class="form-select" id="exampleSelect1" name="mers">
+                <option selected="selected" value="">Aucun filtre</option>
+                {$dmers}
+                {foreach from=$mers item=mer}
+                    {if $dmers == $mer->code}
+                        <option selected="selected" value="{$mer->code}">{$mer->nom}</option>
+                    {else}
+                        <option value="{$mer->code}">{$mer->nom}</option>
+                    {/if}
+                {/foreach}
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleSelect1" class="form-label mt-4">Type de pathologie</label>
+            <select class="form-select" id="exampleSelect1" name="tpathos">
+                <option selected="selected" value="">Aucun filtre</option>
+                {$dtpathos}
+                {foreach from=$tpathos item=tpatho}
+                    {if $dtpathos == $tpatho->type}
+                        <option selected="selected" value="{$tpatho->type}">{$tpatho->desc}</option>
+                    {else}
+                        <option value="{$tpatho->type}">{$tpatho->desc}</option>
+                    {/if}
+                {/foreach}
+            </select>
+        </div>
+        <br> 
+        
+
+      <button type="submit" class="btn btn-primary">Filtrer</button>
+      <a href="./index.php?action=listepatho" class="btn btn-secondary" type="button">Réinitialiser</a>
+
+    </fieldset>
+  </form>
+  
 <table class="table table-hover">
     <thead>
       <tr>
         <th scope="col">Code méridien</th>
-        <th scope="col">Type</th>
         <th scope="col">Description de la pathologie</th>
       </tr>
     </thead>
     <tbody>
-      <tr class="table-active">
-        <td><span class="badge bg-light">Light</span></td>
-        <td><span class="badge bg-primary">Primary</span></td>
-        <td><span class="badge bg-primary">Primary</span></td>
-      </tr>
+        {foreach from=$pathos item=patho}
+            <tr class="table-active">
+                <td><span class="badge bg-light">{$patho->nom}</span></td>
+                <td><span class="badge bg-primary">{$patho->desc}</span></td>
+            </tr>
+        {/foreach}
     </tbody>
 </table>

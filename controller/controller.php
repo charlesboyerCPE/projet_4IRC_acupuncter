@@ -1,9 +1,11 @@
 <?php
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
+/* error_reporting(E_ALL);
+ini_set("display_errors", 1); */
 
 require_once ('./libs/Smarty.class.php');
 require_once ('models/acupuncter.php');
+require_once ('models/pathologies.php');
+
 
 function home(){
   $smarty = new Smarty;
@@ -16,17 +18,33 @@ function getlogin(){
 }
 
 function getlistepatho(){
+  if(!isset($_POST['mers'])){
+    $_POST['mers']='';
+  }
+  $filter_1=htmlspecialchars($_POST['mers']);
+
+  if(!isset($_POST['tpathos'])){
+    $_POST['tpathos']='';
+  }
+  $filter_2=htmlspecialchars($_POST['tpathos']);
+
+  $liste = new Pathologies;
+  $listepathos=$liste->listepatho($filter_1,$filter_2);
+  $listemers=$liste->listemers();
+  $listetpathos=$liste->listetpatho();
+
   $smarty = new Smarty;
-  $smarty->assign(array(
-    "une_variable" => "Je suis une variable",
-    "une_autre_variable" => "Je suis une belle variable"
-    ));
+  $smarty->assign('pathos', $listepathos);
+  $smarty->assign('mers', $listemers);
+  $smarty->assign('dmers', $filter_1);
+  $smarty->assign('tpathos', $listetpathos);
+  $smarty->assign('dtpathos', $filter_2);
   $smarty->display('./views/liste-patho.html');
 }
 
 function postlogin(){
-  $email_user=$_POST['email_user'];
-	$password_user=$_POST['password_user'];
+  $email_user=htmlspecialchars($_POST['email_user']);
+	$password_user=htmlspecialchars($_POST['password_user']);
 
   $connect = new Acupuncter;
   $connect->login($email_user,$password_user);
