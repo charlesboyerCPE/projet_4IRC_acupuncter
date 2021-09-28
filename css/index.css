@@ -1,0 +1,44 @@
+#Accueil {
+    margin-top: 20px;
+    background-color: rgba(255,255,255,0.75);
+
+}
+
+.description {
+    text-align: justify;
+}
+
+.imgdesc {
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.imgdesc2 {
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+h1.Page {
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+}
+
+.avis {
+    background-color: white;
+    border-radius: 8px;
+}
+
+p.avis{
+    margin-top: 5px;
+    font-style: italic;
+}
+
+#Les_bienfaits {
+    margin: auto;
+}

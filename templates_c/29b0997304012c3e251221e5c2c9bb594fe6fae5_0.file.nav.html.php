@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-27 11:55:05
-  from 'C:\wamp64\www\projet_4IRC_acupuncter\templates\nav.html' */
+/* Smarty version 3.1.39, created on 2021-09-27 13:56:51
+  from '/home/atma/public_html/4IRC/projet_4IRC_acupuncter/templates/nav.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6151b11966c112_46071944',
+  'unifunc' => 'content_6151b183909819_70980044',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'a762ee0da0478314e143b3c10c67f85be9f06b46' => 
+    '29b0997304012c3e251221e5c2c9bb594fe6fae5' => 
     array (
-      0 => 'C:\\wamp64\\www\\projet_4IRC_acupuncter\\templates\\nav.html',
-      1 => 1632742137,
+      0 => '/home/atma/public_html/4IRC/projet_4IRC_acupuncter/templates/nav.html',
+      1 => 1632743111,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6151b11966c112_46071944 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6151b183909819_70980044 (Smarty_Internal_Template $_smarty_tpl) {
 ?><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
     <a class="navbar-brand" href="index.php">Acuponcture</a>
