@@ -82,19 +82,19 @@ function getregister(){
 
 function postregister(){
 
-  $email_user=$_POST['email_user'];
-  $password_user=$_POST['password_user'];
-  $password_user2=$_POST['password_user2'];
-  $lname_user=$_POST['lname_user'];
-  $fname_user=$_POST['fname_user'];
+  $email_user=htmlspecialchars($_POST['email_user']);
+  $password_user=htmlspecialchars($_POST['password_user']);
+  $password_user2=htmlspecialchars($_POST['password_user2']);
+  $lname_user=htmlspecialchars($_POST['lname_user']);
+  $fname_user=htmlspecialchars($_POST['fname_user']);
   if(isset($_POST['policies'])){
-         $policies=$_POST['policies'];
+         $policies=htmlspecialchars($_POST['policies']);
   }
   else {
     $policies = null;
   }
   if(isset($_POST['Accepter offres commerciales'])){
-         $commerciales=$_POST['Accepter offres commerciales'];
+         $commerciales=htmlspecialchars($_POST['Accepter offres commerciales']);
   }
   else {
     $commerciales = null;
