@@ -32,3 +32,8 @@ h2 {
     color: black;
     opacity: 0.75;
 }
+
+@font-face {
+    font-family: "Brush Script MT";
+    src: url('./brush-script-mt/brush script mt kursiv.ttf');
+}
