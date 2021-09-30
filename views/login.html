@@ -1,16 +1,15 @@
 {include file="../templates/structure.html" title="Connectez-vous"}
     
-    <div class="row align-middle">
-        <div class="col">
-            <br><br>
-            <h1 class="text-center">Connexion</h1>
-            <br>
+    <section>
+        <div class="row">
+            <div class="col-sm my-4 text-center">
+                <h1>Connexion</h1>
+            </div>
         </div>
-    </div>
-    <form method="POST" action="./index.php?action=postlogin">
-        <fieldset> 
-        <div class="row align-items-center">
-            <div class="col">
+    </section>
+    <section>
+        <form method="POST" action="./index.php?action=postlogin">
+            <fieldset> 
                 <div class="form-group">
                     <div class="mb-3">
                         <label name="Adresse mail" class="noir" for="Email">Adresse mail</label>
@@ -25,14 +24,10 @@
                         <div class="invalid-feedback">Un mot de passe est requis.</div>
                     </div>
                 </div>
-            </div>
-            <div class="mb-3">
-                <button type="submit" class="btn btn-dark">Se connecter</button>
-            </div>
-        </div>
-        </fieldset>
-    </form>
-    
-  </div>
-</body>
-</html>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-dark">Se connecter</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+{include file="../templates/structure-f.html"}

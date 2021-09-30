@@ -1,4 +1,30 @@
-{include file="../templates/structure.html" title="Accueil"}
+<?php
+/* Smarty version 3.1.39, created on 2021-09-30 14:12:21
+  from 'C:\wamp64\www\projet_4IRC_acupuncter\views\index.html' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_6155c5c5258a77_00454452',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '5b0560685ec9285332b3f7e3da6c91a7950114ac' => 
+    array (
+      0 => 'C:\\wamp64\\www\\projet_4IRC_acupuncter\\views\\index.html',
+      1 => 1633011049,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:../templates/structure.html' => 1,
+    'file:../templates/structure-f.html' => 1,
+  ),
+),false)) {
+function content_6155c5c5258a77_00454452 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_subTemplateRender("file:../templates/structure.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>"Accueil"), 0, false);
+?>
 
 <section>
     <div class="row">
@@ -86,4 +112,6 @@
         </div>
     </div>
 </section>
-{include file="../templates/structure-f.html"}
+<?php $_smarty_tpl->_subTemplateRender("file:../templates/structure-f.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+}
+}
