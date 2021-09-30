@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-30 11:35:44
+/* Smarty version 3.1.39, created on 2021-09-30 12:00:08
   from 'C:\wamp64\www\projet_4IRC_acupuncter\views\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6155a1109cda38_72873908',
+  'unifunc' => 'content_6155a6c8cce524_33456525',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5b0560685ec9285332b3f7e3da6c91a7950114ac' => 
     array (
       0 => 'C:\\wamp64\\www\\projet_4IRC_acupuncter\\views\\index.html',
-      1 => 1632754076,
+      1 => 1633003206,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:../templates/structure.html' => 1,
   ),
 ),false)) {
-function content_6155a1109cda38_72873908 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6155a6c8cce524_33456525 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:../templates/structure.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>"Accueil"), 0, false);
 ?>
 
@@ -61,7 +61,9 @@ $_smarty_tpl->_subTemplateRender("file:../templates/structure.html", $_smarty_tp
                     racines historiques, géographiques et culturelles, de ses conditions d’implantation en Occident,
                     l’acupuncture n'intéresse pas seulement la médecine mais aussi l'anthropologie, l'histoire des
                     sciences, l'épistémologie, la sociologie et ce depuis son introduction en Europe au xviie siècle.
-                    L'UNESCO l'a inscrite au patrimoine culturel immatériel de l'humanité le 16 novembre 2010.</p>
+                    L'UNESCO l'a inscrite au patrimoine culturel immatériel de l'humanité le 16 novembre 2010.
+                </p>
+                <q>Source : Wikipedia</q>
             </div>
 
             <div class=col-sm>
@@ -92,7 +94,7 @@ $_smarty_tpl->_subTemplateRender("file:../templates/structure.html", $_smarty_tp
                         faisait
                         des merveilles. Je ne croyais plus en rien mais j'eu tout de même recours à lui et
                         "merveille"!... il sut
-                        placer ses aiguilles et me débarassa de ce fléau !</p>
+                        placer ses aiguilles et me débarassa de ce fléau !</p><q>Source : Journaldesfemmes.fr</q>
                 </div>
                 <div class="col-4 col-sm-6 avis">
                     <p class=avis><br>Cela fait des années que je vois une homéopathe acupuncteur. J'apprécie les
@@ -102,7 +104,7 @@ $_smarty_tpl->_subTemplateRender("file:../templates/structure.html", $_smarty_tp
                         médecines
                         (adaptées à la personnalité de chacun) m'aide à mieux vivre au quotidien, à avoir une meilleure
                         santé et
-                        je les conseille donc sans réserve. M.Line</p>
+                        je les conseille donc sans réserve. M.Line</p><q>Source : Journaldesfemmes.fr</q>
                 </div>
             </div>
             <br><br><br><br>
