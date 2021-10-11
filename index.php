@@ -21,7 +21,12 @@ elseif($action=="logout"){
     logout();
 } 
 elseif($action=="listepatho"){
-    getlistepatho();
+    if($_SESSION){
+        getlistepatho();
+    }
+    else{
+        home();
+    }
 } 
 else{
     home();
