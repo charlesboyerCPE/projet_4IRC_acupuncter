@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-30 14:37:33
+/* Smarty version 3.1.39, created on 2021-10-01 13:14:24
   from 'C:\wamp64\www\projet_4IRC_acupuncter\templates\structure.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6155cbad3121c0_56039841',
+  'unifunc' => 'content_615709b062b692_07221463',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '13f114973a5960c8fe19a0252c915d97c81b605c' => 
     array (
       0 => 'C:\\wamp64\\www\\projet_4IRC_acupuncter\\templates\\structure.html',
-      1 => 1633012650,
+      1 => 1633093963,
       2 => 'file',
     ),
   ),
@@ -21,15 +21,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./nav.html' => 1,
   ),
 ),false)) {
-function content_6155cbad3121c0_56039841 (Smarty_Internal_Template $_smarty_tpl) {
+function content_615709b062b692_07221463 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
   <title>Acuponcture | <?php echo $_smarty_tpl->tpl_vars['title']->value;?>
 </title>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="public/css/bootstrap.css">
+  <link rel="stylesheet" href="public/css/index.css">
   <?php echo '<script'; ?>
  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"><?php echo '</script'; ?>
 >
