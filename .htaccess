@@ -1,9 +1,0 @@
-Options +FollowSymlinks
-RewriteEngine On
-deny from all
-<Files index.php>
-allow from all
-</Files>
-<Folder /public>
-allow from all
-</Folder>
