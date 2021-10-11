@@ -2919,7 +2919,7 @@ textarea.form-control-lg {
 }
 
 .was-validated .form-check-input:valid ~ .form-check-label, .form-check-input.is-valid ~ .form-check-label {
-  color: #56cc9d;
+  color: #31a476;
 }
 
 .form-check-inline .form-check-input ~ .valid-feedback {

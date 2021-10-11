@@ -8,7 +8,7 @@
     </div>
 </section>
     <section>
-        <form method="POST" action="./index.php?action=postregister">
+        <form class="needs-validation" method="POST" action="./index.php?action=postregister" novalidate>
             <fieldset>
             <div class="form-group">    
                 <div class="mb-3">
@@ -64,6 +64,31 @@
             <div class="mb-3">
                 <button name="Valider l'inscription" type="submit" class="btn btn-dark">Validez l'inscription</button>
             </div>
+
+            <script type="text/javascript">
+                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function () {
+                  'use strict'
+
+                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                  var forms = document.querySelectorAll('.needs-validation')
+
+                  // Loop over them and prevent submission
+                  Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                      form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                          event.preventDefault()
+                          event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                      }, false)
+                    })
+                })()                
+            </script>
+
+
         </fieldset>
         </form>
     </section>

@@ -8,19 +8,19 @@
         </div>
     </section>
     <section>
-        <form method="POST" action="./index.php?action=postlogin">
+        <form class="needs-validation" method="POST" action="./index.php?action=postlogin" novalidate="">
             <fieldset> 
                 <div class="form-group">
                     <div class="mb-3">
                         <label name="Adresse mail" class="noir" for="Email">Adresse mail</label>
-                        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Adresse mail" name="email_user">
+                        <input type="email" class="form-control" id="Email" placeholder="Adresse mail" name="email_user" required="">
                         <div class="invalid-feedback">Un email valide est requis.</div>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="mb-3">
                         <label name="Mot de passe" class="noir" for="Password">Entrez votre mot de passe</label>
-                        <input type="password" class="form-control" id="Password" placeholder="●●●●●●●●●" name="password_user">
+                        <input type="password" class="form-control" id="Password" placeholder="●●●●●●●●●" name="password_user" required="">
                         <div class="invalid-feedback">Un mot de passe est requis.</div>
                     </div>
                 </div>
@@ -28,6 +28,30 @@
                     <button type="submit" class="btn btn-dark">Se connecter</button>
                 </div>
             </fieldset>
+            
+            <script type="text/javascript">
+                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function () {
+                  'use strict'
+
+                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                  var forms = document.querySelectorAll('.needs-validation')
+
+                  // Loop over them and prevent submission
+                  Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                      form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                          event.preventDefault()
+                          event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                      }, false)
+                    })
+                })()        
+            </script>
+
         </form>
     </section>
 {include file="../templates/structure-f.html"}
